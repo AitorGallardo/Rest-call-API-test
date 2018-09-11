@@ -7,7 +7,9 @@ import { Injectable } from '@angular/core';
 export class TestService {
 
   constructor(private http: HttpClient) {
-
    }
 
+   dorequest() {
+    return this.http.get('https://api.github.com/users/AitorGallardo');
+   }
 }
